@@ -1,0 +1,334 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Satisfy&display=swap">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>SEPOKAT!</title>
+  </head>
+  <body>
+
+    <!-- LANDING PAGE SECTION -->
+    <!-- <div id="landingPage">
+      <!-- Navbar -->
+      <nav id="navbar-landingPage" class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" id="logo" href="#">SEPOKAT!</a>
+          <button class="navbar-toggler border-dark" type="button" data-toggle="collapse" data-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars" style="font-size: 1.2em;"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+              <form class="d-flex ml-lg-5">
+                  <input id="search-bar" class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                  <button id="btn-search" class="btn btn-dark buttonSearch" type="submit">Search</button>
+              </form>
+              <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll ml-auto" style="max-height: 100px; ">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#landingPage">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-item nav-link" href="#">About</a>
+                </li>
+                  <li class="ml-2 nav-item">
+                      <!-- Cart button and Cart Modal -->
+                      <button id="btn-cart" type="button" data-toggle="modal" data-target="#contohModal"><i class="fas fa-shopping-cart"></i></button>
+                      <div class="modal fade" id="contohModal" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header text-center">
+                                <h5 class="modal-title w-100 cart-title">My Cart</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true" style="color: black;">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <table id="cartTable" class="table table-borderless">
+                                      <thead>
+                                        <tr>
+                                          <th id="col-cart-img" scope="col"></th>
+                                          <th id="col-cart-info" scope="col" style="font-size: 1.5rem;">Product</th>
+                                          <th id="col-btn-delete-cart" scope="col"></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td scope="row" id="productCartImgBody" class="product-cart-img"></td>
+                                              <td scope="row" class="product-cart-info" id="productCartInfoBody"></td>
+                                              <td scope="row" class="btn-cart-delete" id="productCartBtnDelBody"></td>
+                                          </tr>
+                                          <!-- <tr>
+                                              <td scope="row" class="product-cart-img"><img src="/assets/sneakers_nike.jpg" alt="" style="width: 120px; height: 70px;"></td>
+                                              <td class="product-cart-info">
+                                                  <h5 class="product-cart-name font-weight-bold" style="margin-bottom: 0;">Nike Air Jordan</h5>
+                                                  <p class="product-cart-price" style="margin-bottom: 0;">$2000</p>
+                                                  <p class="product-cart-qty">Qty: 3</p>
+                                              </td>
+                                              <td class="btn-cart-delete"><button class="btn btn-danger">&times;</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row" class="product-cart-img"><img src="/assets/sneakers_nike.jpg" alt="" style="width: 120px; height: 70px;"></td>
+                                            <td class="product-cart-info">
+                                                <h5 class="product-cart-name font-weight-bold" style="margin-bottom: 0;">Nike Air Jordan</h5>
+                                                <p class="product-cart-price" style="margin-bottom: 0;">$2000</p>
+                                                <p class="product-cart-qty">Qty: 3</p>
+                                            </td>
+                                            <td class="btn-cart-delete"><button class="btn btn-danger">&times;</button></td>
+                                        </tr>
+                                        <tr>
+                                          <td scope="row" class="product-cart-img"><img src="/assets/sneakers_nike.jpg" alt="" style="width: 120px; height: 70px;"></td>
+                                          <td class="product-cart-info">
+                                              <h5 class="product-cart-name font-weight-bold" style="margin-bottom: 0;">Nike Air Jordan</h5>
+                                              <p class="product-cart-price" style="margin-bottom: 0;">$2000</p>
+                                              <p class="product-cart-qty">Qty: 3</p>
+                                          </td>
+                                          <td class="btn-cart-delete"><button class="btn btn-danger">&times;</button></td>
+                                      </tr> -->
+                                      </tbody>
+                                    </table>
+                              </div>
+                              <div class="d-flex justify-content-center modal-footer">
+                                  <button id="btn-checkout" class="btn btn-warning font-weight-bold">Checkout</button>
+                                  <button id="btn-cancel" class="btn btn-danger" style="opacity: 60%;">Cancel</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </li>
+              </ul>
+          </div>
+          <!-- <a id="user-login" href="#" style="text-decoration: none;">Jhon Doe</a> -->
+      </div>
+      </nav>
+      <!-- akhir navbar -->
+  
+      <!-- Jumbotron -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          
+        </div>
+      </div>
+      <!-- Akhir Jumbotron -->
+  
+      <!-- Container -->
+      <!-- <div class="container"> -->
+        <!-- info panel -->
+        <!-- <div class="row justify-content-center">
+          <div class="col-10 info-panel">
+            <div class="row">
+              <div class="col-lg">
+                <img src="img/img/trusted.webp" alt="trusted" class="float-left">
+                <h4>Trusted</h4>
+                <p>100% authentic</p>
+              </div>
+              <div class="col-lg">
+                <img src="img/img/fast.png" alt="fast" class="float-left">
+                <h4>Fast Shipping</h4>
+                <p>Only took one day to deliver</p>
+              </div>
+              <div class="col-lg">
+                <img src="img/img/best.png" alt="best" class="float-left">
+                <h4>Best seller</h4>
+                <p>#1 Sneakers seller in Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- akhir info panel -->
+        <!-- Team -->
+        <!-- <section class="team">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h5>"We are doing our best"</h5>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-6 justify-content-center d-flex">
+              <figure class="figure">
+                <img src="img/mekael.jpg" class="figure-img img-fluid rounded-circle" alt="mekael">
+                <figcaption class="figure-caption">
+                  <h5>Mekael Hamonangan</h5>
+                  <p>Backend Developer</p>
+                </figcaption>
+              </figure>
+              <figure class="figure">
+                <img src="img/isal.png" class="figure-img img-fluid rounded-circle" alt="tiansyah">
+                <figcaption class="figure-caption">
+                  <h5>Tiansyah M Salman</h5>
+                  <p>Frontend Developer</p>
+                </figcaption>
+              </figure>
+              <figure class="figure">
+                <img src="img/damar.jpg" class="figure-img img-fluid rounded-circle" alt="damar">
+                <figcaption class="figure-caption">
+                  <h5>Damario Haznam</h5>
+                  <p>Backend Developer</p>
+                </figcaption>
+              </figure>
+              <figure class="figure">
+                <img src="img/albert.JPG" class="figure-img img-fluid rounded-circle" alt="albert">
+                <figcaption class="figure-caption">
+                  <h5>Albert Manuel</h5>
+                  <p>Frontend Developer</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section> -->
+        <!-- akhir team -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <!-- END LANDING PAGE SECTION -->
+      
+
+    <!-- PRODUCT PAGE SECTION -->
+        <!-- Nav section -->
+      <div id="productPage">
+        <!-- Catalog Section -->
+        <div class="container">
+                <!-- <div class="mt-4 jumbotron jumbotron-fluid" style="border-radius: 20px;">
+                    <h1 class="display-4">Ads Here</h1>
+                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                    </p>
+                </div> -->
+            <div id="content" class="mt-5 d-flex flex-wrap product-catalog justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-warning">Nike</span>
+                        <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                        <p class="product-card-price">Price: $2000</p>
+                        <p class="product-card-stock">Stock: 40</p>
+                        <span class="d-inline-block" style="width: 100%; text-align: right;">
+                            <a href="#" class="btn btn-success btn-addToCart">Add to cart</a> 
+                        </span>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-warning">Nike</span>
+                        <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                        <p class="product-card-price">Price: $2000</p>
+                        <p class="product-card-stock">Stock: 40</p>
+                        <span class="d-inline-block" style="width: 100%; text-align: right;">
+                            <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-warning">Nike</span>
+                        <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                        <p class="product-card-price">Price: $2000</p>
+                        <p class="product-card-stock">Stock: 40</p>
+                        <span class="d-inline-block" style="width: 100%; text-align: right;">
+                            <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-warning">Nike</span>
+                        <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                        <p class="product-card-price">Price: $2000</p>
+                        <p class="product-card-stock">Stock: 40</p>
+                        <span class="d-inline-block" style="width: 100%; text-align: right;">
+                            <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-warning">Nike</span>
+                        <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                        <p class="product-card-price">Price: $2000</p>
+                        <p class="product-card-stock">Stock: 40</p>
+                        <span class="d-inline-block" style="width: 100%; text-align: right;">
+                            <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-warning">Nike</span>
+                        <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                        <p class="product-card-price">Price: $2000</p>
+                        <p class="product-card-stock">Stock: 40</p>
+                        <span class="d-inline-block" style="width: 100%; text-align: right;">
+                            <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <span class="badge badge-warning">Nike</span>
+                      <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                      <p class="product-card-price">Price: $2000</p>
+                      <p class="product-card-stock">Stock: 40</p>
+                      <span class="d-inline-block" style="width: 100%; text-align: right;">
+                          <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                      </span>
+                  </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <span class="badge badge-warning">Nike</span>
+                    <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                    <p class="product-card-price">Price: $2000</p>
+                    <p class="product-card-stock">Stock: 40</p>
+                    <span class="d-inline-block" style="width: 100%; text-align: right;">
+                        <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                    </span>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="/assets/sneakers_nike.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <span class="badge badge-warning">Nike</span>
+                  <h5 class="card-title product-card-name font-weight-bold">Nike Air Jordan</h5>
+                  <p class="product-card-price">Price: $2000</p>
+                  <p class="product-card-stock">Stock: 40</p>
+                  <span class="d-inline-block" style="width: 100%; text-align: right;">
+                      <a href="#" class="btn btn-success btn-addToCart">Add to cart</a>
+                  </span>
+              </div>
+          </div>
+            </div>
+        </div>
+      </div>
+    <!-- END PRODUCT PAGE SECTION  -->
+
+
+
+    <!-- CHECKOUT SECTION -->
+    <!-- END CHECKOUT SECTION -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
