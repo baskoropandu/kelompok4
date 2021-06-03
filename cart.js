@@ -96,7 +96,7 @@ let jerseyList = [
         id: 12
     },
 ]
-let cart = []
+// let cart = []
 
 function totalPrice(arr){
     output = 0
@@ -106,11 +106,27 @@ function totalPrice(arr){
     return output
 }
 
-function addtocart(id,produk){
+function addToCart(id,produk){
+    let cart = {}
     for(let i = 0 ; i < produk.length ; i++){
-        if(produk[i].id === id){
-            cart.push(produk[i])
+        if(produk[i].id === id && produk[i].stock > 0){
+            let jumlah = 1
+            if(cart[produk[i].nama] === undefined){
+                cart[produk[i].nama] = {
+                    nama : produk[i].name,
+                    id : produk[i].id,
+                    jumlah,
+                    harga : produk[i].price,
+                }
+            }else{
+                cart[produk[i].nama].jumlah += jumlah
+                cart[produk[i].nama].price += produk[i].price
+            }
+            produk[i].stock--
         }
     }
+    return cart
 }
 
+console.log(addToCart(1,jerseyList));
+// console.log(`=====${cart}====`);
