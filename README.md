@@ -12,7 +12,7 @@ ex: Shopping Cart, Login, Alert
 - 
 
 Task: *belum fix
-Ilham Agung: <fill>
-Baskoro Pandu: TBD
+Ilham Agung: Frontend
+Baskoro Pandu: Backend
 Damario Haznam: Backend
 Nina Martila: frontend
