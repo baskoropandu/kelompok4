@@ -106,7 +106,7 @@ function generateCard(data) {
     result += `<div class="card" style="width: 18rem;">
             <img src="${data[i].img}" class="card-img-top" alt="...">
             <div class="card-body">
-                <span class="badge badge-warning" style="background-color: #3bbf74; color:#fff">${data[i].brand}</span>
+                <span class="badge badge-warning" style="background-color: #28a745; color:#fff">${data[i].brand}</span>
                     <h5 class="card-title product-card-name font-weight-bold">${data[i].name}</h5>
                     <p class="product-card-stock">Stock: ${data[i].stock}</p>
                     <p class="product-card-price">IDR ${data[i].price}</p>

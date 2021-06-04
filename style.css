@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* CSS LANDING PAGE SECTION */
 
@@ -17,10 +17,18 @@ body {
 .product-card-name {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
+  margin: 10px 0;
 }
 
 .product-card-price {
   text-align: center;
+}
+
+.fa,
+.fas {
+  margin-top: 8px;
+  color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 p {
@@ -29,7 +37,7 @@ p {
 }
 
 .card-body .badge .badge-warning {
-  background-color: #3bbf74;
+  background-color: #28a745;
 }
 
 #navbar-landingPage {
@@ -247,8 +255,8 @@ p {
 }
 
 .btn-warning:hover {
-  background-color: #3bbf74;
-  border-color: #3bbf74;
+  background-color: #28a745;
+  border-color: #28a745;
 }
 
 .btn-warning {
@@ -298,6 +306,9 @@ p {
 .card {
   margin-right: 30px;
   margin-bottom: 20px;
+}
+
+.card:hover {
   border-radius: 10px;
   box-shadow: 7px 7px 21px -2px rgba(0, 0, 0, 0.39);
 }
